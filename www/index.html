@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    </head>
+    <body>
+        <div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+    document.addEventListener('deviceready', function() {
+        var url = 'http://onlinestream.hu/app.cgi' // change to whatever you want
+        cordova.InAppBrowser.open(url, '_self', 'location=no,zoom=no','hidenavigationbuttons=yes','hardwareback=yes');
+    }, false)
+
+</script>
+    </body>
+</html>
